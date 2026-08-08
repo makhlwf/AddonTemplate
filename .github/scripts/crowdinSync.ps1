@@ -15,7 +15,8 @@ $addonId = $rawAddonId.Trim()
 # --- STEP 1: PREPARATION AND SOURCE UPDATE ---
 
 $xliffFile = "./$addonId.xliff"
-$mdFile = "./help.md"
+$mdFile = if (Test-Path "./help.md") { "./help.md" } elseif (Test-Path "./readme.md") { "./readme.md" } else { "./help.md" }
+$localMdName = if (Test-Path "./help.md") { "help.md" } elseif (Test-Path "./readme.md") { "readme.md" } else { "help.md" }
 
 if (Test-Path $mdFile) {
     if (Test-Path $xliffFile) {
@@ -100,7 +101,7 @@ foreach ($dir in Get-ChildItem -Path "_addonL10n/$addonId" -Directory) {
     $remotePo = Join-Path $dir.FullName "$addonId.po"
 
     $localMdDir = "addon/doc/$langCode"
-    $localMd = "$localMdDir/help.md"
+    $localMd = "$localMdDir/$localMdName"
 
     $localPoPath = "addon/locale/$langCode/LC_MESSAGES/nvda.po"
 
