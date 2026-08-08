@@ -123,6 +123,17 @@ To keep your `.md` files from your add-on repository, ensuring they aren't repla
 git restore *.md --source=HEAD
 ```
 
+### Separate User Documentation (help.md)
+
+Newer versions of AddonTemplate separate repository developer documentation (`README.md`) from add-on end-user help (`help.md`).
+
+When updating an existing add-on:
+
+1. Create a `help.md` file in your repository root and move your add-on's end-user documentation into it.
+2. Update `README.md` to contain technical setup, build, and contribution instructions for developers.
+3. In `buildVars.py`, ensure `addon_docFileName="help.html"`.
+
+
 ### Remove the template documentation
 
 The `docs/` directory belongs to AddonTemplate itself.
@@ -204,7 +215,8 @@ git commit
 
 | File or directory | Recommended action |
 |-------------------|--------------------|
-| `README.md` | Keep the add-on version |
+| `help.md` | Create for add-on user documentation |
+| `README.md` | Keep or update add-on developer documentation |
 | `CHANGELOG.md` | Keep the add-on version |
 | `docs/` | Remove |
 | `buildVars.py` | Merge manually |
