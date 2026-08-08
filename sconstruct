@@ -111,7 +111,12 @@ if (cssFile := Path("style.css")).is_file():
 	cssTarget = env.Command(str(cssPath), str(cssFile), Copy("$TARGET", "$SOURCE"))
 	env.Depends(addon, cssTarget)
 
-if (readmeFile := Path("readme.md")).is_file():
+if (helpFile := Path("help.md")).is_file():
+	helpPath = docsDir / buildVars.baseLanguage / helpFile
+	helpTarget = env.Command(str(helpPath), str(helpFile), Copy("$TARGET", "$SOURCE"))
+	env.Depends(addon, helpTarget)
+elif (readmeFile := Path("readme.md")).is_file():
+	print("WARNING: `readme.md` as user documentation source is deprecated. Please migrate user documentation to `help.md`.")
 	readmePath = docsDir / buildVars.baseLanguage / readmeFile
 	readmeTarget = env.Command(str(readmePath), str(readmeFile), Copy("$TARGET", "$SOURCE"))
 	env.Depends(addon, readmeTarget)
