@@ -61,7 +61,7 @@ Ensure that your repository includes the following files (provided in this templ
 
 Documentation synchronization relies on the XLIFF support built into `l10nUtil.exe`.
 
-The `md2xliff` command is used to generate the source XLIFF file from the English `readme.md` documentation file.
+The `md2xliff` command is used to generate the source XLIFF file from the English `help.md` documentation file.
 Translated XLIFF files downloaded from Crowdin are then converted back to Markdown documentation using `l10nUtil.exe xliff2md`.
 
 ## Running the Workflow
