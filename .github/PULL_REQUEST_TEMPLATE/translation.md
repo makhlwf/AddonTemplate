@@ -1,4 +1,4 @@
-> ⚠️ **NOTICE: Translations are managed via Crowdin!**
+> **NOTICE: Translations are managed via Crowdin!**
 >
 > We use **Crowdin** to translate this NVDA add-on. Direct GitHub Pull Requests modifying `.po` or `.mo` files manually are generally **not accepted** to prevent translation sync conflicts.
 > 
@@ -10,9 +10,9 @@
 ## Translation PR Details
 
 ### Type of Translation Contribution
-- [ ] 🤖 Automated Crowdin Sync PR
-- [ ] 🌐 Source `.pot` template update (`scons pot`)
-- [ ] 🛠️ Maintainer emergency fix for localization files
+- [ ] Automated Crowdin Sync PR
+- [ ] Source `.pot` template update (`scons pot`)
+- [ ] Maintainer emergency fix for localization files
 
 ### Affected Languages / Locales
 <!-- List locale codes, e.g., es, fr, de, ja, zh_CN -->

@@ -5,11 +5,11 @@
 <!-- Link to related issue(s), e.g., Fixes #123 -->
 
 ## Type of Change
-- [ ] 🐛 Bug fix (fixes an issue without breaking existing API/behavior)
-- [ ] ✨ New feature (adds new capability to the add-on)
-- [ ] ⚙️ Performance improvement
-- [ ] ♻️ Code refactoring (no functional changes)
-- [ ] 📦 Dependency update / CI pipeline tweak
+- [ ] Bug fix (fixes an issue without breaking existing API/behavior)
+- [ ] New feature (adds new capability to the add-on)
+- [ ] Performance improvement
+- [ ] Code refactoring (no functional changes)
+- [ ] Dependency update / CI pipeline tweak
 
 ## NVDA Testing & Verification Environment
 - **Minimum NVDA Version Tested:** <!-- e.g. 2024.1 -->

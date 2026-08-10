@@ -11,11 +11,11 @@ Before submitting your PR, please choose the template that best matches your con
 <!-- Brief summary of what this pull request changes and why. Include link to issue if applicable. -->
 
 ## Type of Change
-- [ ] 🐛 Bug fix (non-breaking change fixing an issue)
-- [ ] ✨ New feature (non-breaking change adding functionality)
-- [ ] ♻️ Refactoring / Maintenance
-- [ ] 👷 CI / Build system / Infrastructure update
-- [ ] 📝 Documentation update
+- [ ] Bug fix (non-breaking change fixing an issue)
+- [ ] New feature (non-breaking change adding functionality)
+- [ ] Refactoring / Maintenance
+- [ ] CI / Build system / Infrastructure update
+- [ ] Documentation update
 
 ## NVDA & Accessibility Testing
 - [ ] **NVDA Version(s) Tested:** <!-- e.g., 2024.1, 2026.2, latest alpha -->
