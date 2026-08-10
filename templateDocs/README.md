@@ -171,7 +171,7 @@ If not, leave the dictionary empty.
 
 ### To manage documentation files for your addon:
 
-1. Copy the `readme.md` file for your add-on to the first created folder, where you copied `buildVars.py`. You can also copy `style.css` to improve the presentation of HTML documents.
+1. Create a `readme.md` file for your add-on and copy it to the first created folder, where you copied `buildVars.py`. You can also copy `style.css` to improve the presentation of HTML documents.
 2. Documentation files (named `readme.md`) must be placed into `addon\doc\<lang>/`.
 
 ### To package the add-on for distribution:
