@@ -1,3 +1,10 @@
+---
+name: NVDA Add-on Feature / Fix PR
+about: Use this template for PRs that modify add-on functionality, features, bug fixes, or translations.
+title: ''
+labels: ''
+---
+
 ## Summary
 <!-- Describe the changes made in this PR and why they are necessary. -->
 
