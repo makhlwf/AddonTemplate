@@ -34,4 +34,3 @@ labels: 'template'
 
 ## Documentation & Changelog
 - [ ] Updated `readme.md` or developer documentation (if applicable).
-- [ ] Added description of template change to `changelog.md`.
