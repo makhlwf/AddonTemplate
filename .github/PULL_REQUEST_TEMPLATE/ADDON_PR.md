@@ -1,10 +1,3 @@
----
-name: NVDA Add-on Feature / Fix PR
-about: Use this template for PRs that modify add-on functionality, features, bug fixes, or translations.
-title: ''
-labels: ''
----
-
 ## Summary
 <!-- Describe the changes made in this PR and why they are necessary. -->
 
@@ -20,8 +13,8 @@ labels: ''
 
 ## NVDA Testing & Verification Environment
 - **Minimum NVDA Version Tested:** <!-- e.g. 2024.1 -->
-- **Latest NVDA Version Tested:** <!-- e.g. 2026.2 / latest alpha -->
-- **OS / Platform:** Windows 10 / 11
+- **Latest NVDA Version Tested:** <!-- Specify exact version number, e.g. 2026.2 (do not use "latest alpha") -->
+- **OS / Windows Version:** <!-- Full Windows version and build number, e.g. Windows 11 23H2 (build 22631.4169) -->
 
 ### Screen Reader & Accessibility Impact
 - [ ] **Speech Output**: Verified speech feedback in affected NVDA modes/dialogs.
@@ -33,7 +26,5 @@ labels: ''
 - [ ] **`changelog.md`**: Added a description of the change under the unreleased/current section.
 - [ ] **i18n / Translatable Strings**: Ensured all user-visible strings use gettext (`_()`), and updated `.pot` file via `scons pot` if new strings were added.
 
-## Local Quality Checks
-- [ ] Ran `ruff check .` / `prek` cleanly.
-- [ ] Ran `pytest` with 100% passing tests.
-- [ ] Tested add-on bundle installation locally (`scons`).
+## Testing strategy
+<!-- Describe the manual or automated testing performed for this change. (Note: standard linting, formatting, and tests are automated via CI/CD) -->
